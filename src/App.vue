@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Parrallax/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Parrallax from './components/Parrallax.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Parrallax
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@font-face {
+  font-family: "VALORANT-Regular";
+
+  src: url("./assets/fonts/ValorantFont.woff") format("woff"), /* Modern Browsers */
+    url("./assets/fonts/ValorantFont.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #0f1922;
 }
 </style>
